@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midasbuy Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://cdn.midasbuy.com/oversea_web/static/media/midasbuy-logo__new.9bd1b393.png" alt="Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">PUBG MOBILE</a>
+                <a href="#">Games</a>
+                <a href="#">Help Center</a>
+            </div>
+            <div class="user-actions">
+                <button class="login-btn">Log in</button>
+            </div>
+            
+            <script>
+                document.querySelector('.login-btn').addEventListener('click', function() {
+                    window.location.href = 'https://www.midasbuy.com/midasbuy/to/';
+                });
+            </script>
+            
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="hero">
+            <div class="game-info">
+            </div>
+        </section>
+        
+        
+        <style>
+            .hero {
+                background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/7316.jpg'); /* Replace with your image path */
+                background-size: cover; /* Makes the background cover the entire section */
+                background-position: center; /* Centers the image */
+                height: 100vh; /* Adjust the height as needed */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .game-info {
+                color: white; /* Optional: Adjust text color for contrast */
+                text-align: center; /* Centers the text */
+            }
+        </style>
+        
+        <section class="purchase-section">
+            <div class="region-select">
+                <h3>Select Region</h3>
+                <select>
+                    <option value="india">India</option>
+                    <option value="sweden">Sweden</option>
+                    <option value="norway">Norway</option>
+                    <option value="denmark">Denmark</option>
+                    <option value="iceland">Iceland</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="italy">Italy</option>
+                    <option value="spain">Spain</option>
+                    <option value="united-kingdom">United Kingdom</option>
+                    <option value="united-states">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="japan">Japan</option>
+                    <option value="china">China</option>
+                    
+                </select>
+            </div>
+            
+            <div class="player-id"> 
+                <h3>CODE</h3>
+                <input type="text" id="code-input" placeholder="Enter valid CODE">
+                <button class="confirm-btn" id="confirm-btn" disabled>Confirm</button>
+                <p id="notification" style="color: red; display: none;">Wrong input</p> <!-- Notification for wrong input -->
+            </div>  
+            
+            <script>
+                // Function to redirect to a website
+                function redirectToWebsite() {
+                    window.location.href = "http://127.0.0.1:3000/uc.html";
+                }
+            
+                const codeInput = document.getElementById("code-input");
+                const confirmButton = document.getElementById("confirm-btn");
+                const notification = document.getElementById("notification");
+            
+                // Function to check the code
+                codeInput.addEventListener("input", () => {
+                    if (codeInput.value === "CHEAPPRICEUC") {
+                        confirmButton.disabled = false;
+                        notification.style.display = "none";  // Hide notification when code is correct
+                    } else {
+                        confirmButton.disabled = true;
+                        notification.style.display = "block";  // Show notification when code is incorrect
+                    }
+                });
+            
+                // Add functionality to the button
+                confirmButton.addEventListener("click", () => {
+                    redirectToWebsite(); // Redirect when the button is clicked
+                });
+            </script>
+            
+
+
+            <div class="uc-packages">
+                <h3>Select Hack</h3>
+                <div class="packages-grid">
+                    <div class="package">
+                        <img src="https://cdn.midasbuy.com/images/apps/pubgm/1599546007887MVeNUtB6.png" alt="60 UC">
+                        <p>Safe Hack</p>
+                        <span>$2</span>
+                    </div>
+                    <div class="package">
+                        <img src="https://cdn.midasbuy.com/images/apps/pubgm/1599546007887MVeNUtB6.png" alt="300 UC">
+                        <p>Premium Hack</p>
+                        <span>$5</span>
+                    </div>
+                    <div class="package">
+                        <img src="https://cdn.midasbuy.com/images/apps/pubgm/1599546007887MVeNUtB6.png" alt="600 UC">
+                        <p>life Time Support and Hack</p>
+                        <span>€9.99</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <p>© 2024 PUBG MOBILE. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
