@@ -109,12 +109,14 @@ input {
     background-color: #f7b23b;
     color: #000000;
     border: none;
-    padding: 0.8rem 2rem;
-    border-radius: 4px;
+    padding: 12rem 3rem; /* Increased padding for larger button */
+    border-radius: 100px; /* Added px for proper border radius */
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.5rem; /* Increased font size */
     margin-top: 1rem;
 }
+
 
 /* UC Packages */
 .packages-grid {
@@ -215,4 +217,41 @@ footer {
     font-size: 1px; /* Adjust the font size */
     padding: 1px 2px; /* Adjust the padding for button size */
     /* You can also adjust height or width if needed */
+}
+
+.package {
+    text-align: center; /* Center-align content if needed */
+    margin: 20px;
+}
+
+.package img {
+    width: 100px; /* Adjust size as needed */
+}
+
+.package p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.package span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-container {
+    margin-top: 20px; /* Add space between content and button */
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f7b23b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #0056b3; /* Hover effect */
 }
