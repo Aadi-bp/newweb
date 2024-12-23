@@ -111,7 +111,7 @@
             
                 // Function to check the code
                 codeInput.addEventListener("input", () => {
-                    if (codeInput.value === "CHEAPPRICEUC") {
+                    if (codeInput.value === "AADIBYPASS") {
                         confirmButton.disabled = false;
                         notification.style.display = "none";  // Hide notification when code is correct
                     } else {
@@ -119,7 +119,6 @@
                         notification.style.display = "block";  // Show notification when code is incorrect
                     }
                 });
-            
                 // Add functionality to the button
                 confirmButton.addEventListener("click", () => {
                     redirectToWebsite(); // Redirect when the button is clicked
